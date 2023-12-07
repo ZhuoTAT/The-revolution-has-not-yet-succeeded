@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: 100px auto 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #c0c0c0;
+            width: 300px;
+        }
+
+        th,
+        td {
+            border: 1px solid #d0d0d0;
+            color: #404060;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #09c;
+            font: bold 16px "微软雅黑";
+            color: #fff;
+        }
+
+        td {
+            font: 14px "微软雅黑";
+        }
+
+        tbody tr {
+            background-color: #f0f0f0;
+        }
+
+        tbody tr:hover {
+            cursor: pointer;
+            background-color: #fafafa;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" id="j_cbAll" />
+                    </th>
+                    <th>商品</th>
+                    <th>单价</th>
+                </tr>
+            </thead>
+            <tbody id="j_tb">
+                <tr>
+                    <td>
+                        <input type="checkbox" />
+                    </td>
+                    <td>华为Mate60</td>
+                    <td>5499</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" />
+                    </td>
+                    <td>华为Mate60 Pro</td>
+                    <td>6999</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" />
+                    </td>
+                    <td>小米14 Pro</td>
+                    <td>4999</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" />
+                    </td>
+                    <td>小米14</td>
+                    <td>3999</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <script>
+        let trs = document.querySelector('#j_tb').querySelectorAll('input');
+        let j_cbAll = document.querySelector('#j_cbAll');
+        j_cbAll.onclick = function () {
+            console.log(this.checked);
+            for (let i = 0; i < trs.length; i++) {
+                trs[i].checked = this.checked;
+            }
+        }
+        // 1. 全选和取消全选做法：  让下面所有复选框的checked属性（选中状态） 跟随 全选按钮即可
+        // 获取元素
+        // 全选按钮
+        // 下面所有的复选框
+        // 注册事件
+        // 复选框的 checked属性：得到当前复选框的选中状态如果是true 就是选中，如果是false 就是未选中
+        
+        // 2. 下面复选框需要全部选中， 上面全选才能选中做法： 给下面所有复选框绑定点击事件，每次点击，都要循环查看下面所有的复选框是否有没选中的，如果有一个没选中的， 上面全选就不选中。
+        // for (let i = 0; i < trs.length; i++) {
+        //     trs[i].onclick = function () {
+        //         let flag = true;
+        //         for (let j = 0; j < trs.length; j++) {
+        //             if (!trs[j].checked) {
+        //                 flag = false;
+        //                 break;
+        //             }
+        //         }
+        //         j_cbAll.checked = flag;
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

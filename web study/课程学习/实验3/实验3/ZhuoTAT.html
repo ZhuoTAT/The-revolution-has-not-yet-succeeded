@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/firstpage.css">
+    <title>ZhuoTAT</title>
+</head>
+
+<!-- 首页 -->
+
+<body>
+    <div class="home">
+        <div class="content">
+            <div class="stars"></div>
+            <img class="bgc" src="images/back.jpg" width="100%" alt="">
+            <h2 class="title">欢迎来到我的个人网站</h2>
+            <h2 class="titles">今天也要加油鸭</h2>
+            <h2 class="titless">ZhuoTAT's Home</h2>
+            <div class='ribbon'>
+                <a href="ZhuoTAT-thirdpage.html"><span>register</span></a>
+                <a href="ZhuoTAT-secondpage.html"><span>home</span></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let mucics = document.getElementById('audio')
+    document.body.addEventListener('mousemove', function () {
+        setTimeout(() => {
+            mucics.play();
+        }, 2000);
+    }, false);
+</script>
+
+</html>

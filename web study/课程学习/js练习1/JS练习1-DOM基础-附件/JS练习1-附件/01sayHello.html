@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>问候语</title>
+</head>
+
+<body>
+    <img src="images/s.gif" alt="图片" style="width: 300px;">
+    <div>上午好</div>
+    <script>
+        let imgl=document.querySelector("img");
+        let divl=document.querySelector("div");
+        console.dir(imgl);
+        console.dir(divl);
+
+        let date =new Date();
+        let nowhour=date.getHours();
+        console.dir(date);
+        console.log(nowhour);
+
+        if(nowhour>=5&&nowhour<=12){
+            divl.textContent="上午好";
+            imgl.src="images/s.gif";
+        }
+        else if (nowhour >= 13 && nowhour <= 18) {
+            divl.textContent = "下午好";
+            imgl.src = "images/x.gif";
+        }
+        else{
+            divl.textContent = "晚上好";
+            imgl.src = "images/w.gif";
+        }
+        console.log(imgl);
+        console.log(divl);
+        // 根据系统不同时间来判断，所以需要用到日期内置对象 （百度 js日期对象）
+        // 需要一个图片，并且根据时间修改图片（上午 下午 晚上）（s.gif；x.gif；w.gif）
+        // 需要一个div元素，显示不同问候语，修改元素内容即可
+      
+        // 1.获取元素  （定义变量时 使用 let 关键字代替 var）（使用教材P419页 32.4.4节介绍的方法）
+        // 额外代码：控制台输出元素对应的变量，使用dir方法
+
+        // 2. 得到当前的小时数  （百度 js日期对象，获取小时数字）
+        // 额外代码：控制台输出，系统日期对象，使用dir方法
+        // 额外代码：控制台输出，小时数字，使用log方法
+
+        // 3. 判断小时数改变图片和文字信息
+        // 额外代码：控制台输出，问后语言的文字信息，使用log方法
+      
+    </script>
+</body>
+
+</html>

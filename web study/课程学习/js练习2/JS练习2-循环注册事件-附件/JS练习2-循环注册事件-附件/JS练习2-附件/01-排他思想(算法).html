@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>按钮1</button>
+    <button>按钮2</button>
+    <button>按钮3</button>
+    <button>按钮4</button>
+    <button>按钮5</button>
+    <script>
+        let btns = document.querySelectorAll('button');
+        btns.forEach(function (litem) {
+            litem.onclick = function () {
+                for (let j = 0; j < btns.length; j++) {
+                    btns[j].style.backgroundColor = "";
+                }
+                litem.style.backgroundColor = "green";
+            }
+        })
+        // 1. 获取所有按钮元素
+        
+        // btns得到的是NodeList
+
+        //遍历NodeList，给每一个button注册事件
+        // (1) 先把所有的按钮背景颜色重置为无
+        // (2) 再设置当前的元素背景颜色为 green
+
+        // for (let i = 0; i < btns.length; i++) {
+        // let litem = btns[i];
+        //     litem.onclick = function () {
+        //         for (let j = 0; j < btns.length; j++) {
+        //             btns[j].style.backgroundColor = "";
+        //         }
+        //         litem.style.backgroundColor = "green";
+        //     }
+        // }
+        //方法二：使用NodeList的forEach方法
+        //btns.forEach(); 遍历NodeList
+
+        //btns.forEach(function(item){ });
+        //遍历NodeList；遍历时执行函数function，上述代码函数体为空
+        //其中item变量为遍历NodeList时，NodeList中的Node对象
+        
+    </script>
+</body>
+
+</html>

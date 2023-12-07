@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器练习8</title>
+    <style>
+        input[type="text"] {
+            width: 50px;
+        }
+
+        input[type="password"] {
+            width: 100px;
+        }
+
+        input[type="radio"] {
+            width: 100px;
+        }
+
+        input[type="checkbox"] {
+            width: 200px;
+        }
+
+        input[type="submit"] {
+            width: 50px;
+            height: 30px;
+            background-color: lightblue;
+        }
+
+        input[type="button"] {
+            background-color: green;
+        }
+
+        input[type="file"] {
+            font-size: 1.2em;
+        }
+
+        select {
+            width: 200px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input {
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+    <!-- 所有text表单元素，设置宽度50px
+    所有password表单元素，设置宽度100px
+    
+    所有radio表单元素，设置宽度100px；
+    所有checkbox表单元素，设置宽度200px；
+	所有submit表单元素，设置宽度50px，高度30px，背景色浅蓝色
+	所有button表单元素 ,设置背景色绿色
+	所有file表单元素，设置文字大小为1.2em
+    所有select表单元素，设置宽度为200px
+    所有textarea表单元素，设置高度为150px
+  所有input表单元素，边框红色实线框 -->
+
+</head>
+
+<body>
+    <h1>表单选择器</h1>
+    <form id="form1" action="#">
+        <input type="button" value="Button" /><br />
+        <input type="checkbox" name="c" />1<input type="checkbox" name="c" />2<input type="checkbox" name="c" />3<br />
+        <input type="file" /><br />
+        <input type="hidden" />
+        <div style="display:none">test</div><br />
+        <input type="password" /><br />
+        <input type="radio" name="a" />1<input type="radio" name="a" />2<br />
+        <input type="reset" /><br />
+        <input type="submit" value="提交" /><br />
+        <input type="text" /><br />
+        <select>
+            <option>Option</option>
+        </select><br />
+        <textarea rows="5" cols="20"></textarea><br />
+        <button>Button</button><br />
+    </form>
+
+    <div></div>
+</body>
+
+</html>

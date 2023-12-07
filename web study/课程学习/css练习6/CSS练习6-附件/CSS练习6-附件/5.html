@@ -1,0 +1,598 @@
+<html>
+
+<head>
+    <title>足球</title>
+    <style>
+        /* 总布局 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 1100px;
+            height: 850px;
+            overflow: hidden;
+            margin: auto;
+        }
+
+        .leftone {
+            float: left;
+            width: 680px;
+            margin: 15px;
+            height: 500px;
+        }
+
+        .rightone {
+            border: 1px solid rgb(173, 173, 173);
+            float: right;
+            margin: 15px;
+            height: 500px;
+            width: 350px;
+        }
+
+        .lefttwo {
+            border: 1px solid rgb(173, 173, 173);
+            float: left;
+            width: 680px;
+            margin: 15px;
+            height: 280px;
+        }
+
+        .righttwo {
+            float: right;
+            margin: 15px;
+            width: 350px;
+            height: 282px;
+        }
+
+        /* 左部分 */
+
+        /* 右部分 */
+        .headline2 {
+            margin: -1px;
+            position: relative;
+            top: -12px;
+            height: 50px;
+            background: url(images/bg2.png)no-repeat;
+            color: white;
+        }
+
+        .kuang {
+            border: 1px solid rgb(173, 173, 173);
+        }
+
+        /* 左一 */
+        .leftone {}
+
+        .headline1 {
+            position: relative;
+            top: -12px;
+            height: 50px;
+            margin-bottom: 15px;
+            background: url(images/bg2.png)no-repeat;
+            color: white;
+        }
+
+        h3 {
+            margin: 11px;
+            padding-top: 11px;
+        }
+
+        /* 背景图片 */
+        .bigimg {
+            height: 430px;
+            background: url(images/feature_slider.jpg)no-repeat;
+
+        }
+
+        /* 箭头 */
+        .arrows {
+            margin: 7px 5px 5px 5px;
+        }
+
+        #leftarrow {
+            margin: 5px;
+            float: right;
+            width: 25px;
+            height: 25px;
+            background: url(images/arrows.png)no-repeat;
+            background-position: -40px -21px;
+        }
+
+        #rightarrow {
+            margin: 5px;
+            float: right;
+            width: 25px;
+            height: 25px;
+            background: url(images/arrows.png)no-repeat;
+            background-position: -10px -25px;
+
+        }
+
+        /* 文字 */
+        .wz {
+            width: 400px;
+            position: relative;
+            top: 250px;
+            left: 40px;
+        }
+
+        .bgp {
+            margin: 5px;
+            color: rgb(255, 208, 0);
+            font-weight: bold;
+        }
+
+        .bghl {
+            margin: 5px;
+            color: white;
+            font-weight: bolder;
+            font-size: 24px;
+        }
+
+        .bgpe {
+            margin: 5px;
+            color: rgb(255, 208, 0);
+            font-weight: bold;
+            font-size: 10px;
+        }
+
+        /* 左二 */
+        .newsimg {
+            float: left;
+            width: 290px;
+            height: 280px;
+            margin-right: 15px;
+        }
+
+        .newsimg img {
+            width: 300px;
+            height: 280px;
+            background-attachment: fixed;
+        }
+
+        .article {
+            margin: 15px;
+            float: right;
+            width: 335px;
+            height: 215px;
+            position: relative;
+            left: -5px;
+            top: -5px;
+        }
+
+        .article .p1 {
+            color: rgb(255, 208, 0);
+            font-weight: bold;
+        }
+
+        .article .p2 {
+            color: rgb(71, 71, 71);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .p2 span {
+            color: rgb(27, 27, 27);
+            font-size: 26px;
+
+        }
+
+        .article .p3 {
+            font-weight: bold;
+            color: gray;
+            margin-bottom: 7px;
+        }
+
+        .article .p4 {
+            color: grey;
+        }
+
+        .article .p5 {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .who {
+            border-top: 1px solid rgb(173, 173, 173);
+            width: 380px;
+            height: 48px;
+            position: relative;
+            top: 230px;
+            left: 300px;
+        }
+
+        .who img {
+            position: relative;
+            left: -285px;
+            top: -235px;
+            border-radius: 50%;
+
+        }
+
+        .who p {
+
+            float: left;
+            width: 140px;
+            height: 2em;
+            position: relative;
+            left: 60px;
+            top: -266px;
+        }
+
+        /* 画图形 */
+
+        /* 爱心 */
+        .heart.icon {
+            color: #ff0000;
+            position: absolute;
+            margin-top: 6px;
+            margin-left: 5px;
+            width: 9px;
+            height: 9px;
+            border-left: solid 1px currentColor;
+            border-bottom: solid 1px currentColor;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        .heart.icon:before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -1px;
+            width: 8px;
+            height: 5px;
+            border-radius: 5px 5px 0 0;
+            border-top: solid 1px currentColor;
+            border-left: solid 1px currentColor;
+            border-right: solid 1px currentColor;
+        }
+
+        .heart.icon:after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 8px;
+            width: 5px;
+            height: 8px;
+            border-radius: 0 5px 5px 0;
+            border-top: solid 1px currentColor;
+            border-right: solid 1px currentColor;
+            border-bottom: solid 1px currentColor;
+        }
+
+        /* 眼睛 */
+        .eye-solid.icon {
+            color: #000;
+            position: absolute;
+            margin-left: 3px;
+            margin-top: 3px;
+            width: 12px;
+            height: 12px;
+            border-radius: 70% 15%;
+            border: solid 1px currentColor;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .eye-solid.icon:before {
+            content: '';
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            border: solid 1px currentColor;
+            background-color: currentColor;
+        }
+
+        /* 聊天框 */
+        .chat.icon {
+            color: #000;
+            position: absolute;
+            margin-left: 2px;
+            margin-top: 4px;
+            width: 15px;
+            height: 10px;
+            border: solid 1px currentColor;
+            border-radius: 5px;
+        }
+
+        .chat.icon:before {
+            content: '';
+            position: absolute;
+            left: 3px;
+            top: 8px;
+            width: 4px;
+            height: 4px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background-color: white;
+            border-bottom: solid 1px currentColor;
+            border-right: solid 1px currentColor;
+        }
+
+        /* 图型位置 */
+        .eye-solid.icon {
+            position: relative;
+            top: -260px;
+            left: 190px;
+        }
+
+        .heart.icon {
+            position: relative;
+            top: -310px;
+            left: 245px;
+        }
+
+        .chat.icon {
+            position: relative;
+            top: -360px;
+            left: 305px;
+        }
+
+        /* 数据 */
+        .num {
+            width: 50px;
+            height: 2em;
+        }
+
+        #n1 {
+            position: relative;
+            top: -298px;
+            left: 210px;
+        }
+
+        #n2 {
+            position: relative;
+            top: -326px;
+            left: 270px;
+        }
+
+        #n3 {
+            position: relative;
+            top: -375px;
+            left: 330px;
+        }
+
+        /* 右一 */
+
+        .newslist {
+            margin-top: 15px;
+            height: 430px;
+        }
+
+        #pp {
+            list-style: none;
+        }
+
+        /* 图片 */
+        .smlimg {
+            margin: 0px 15px 15px 15px;
+            width: 83px;
+        }
+
+        .lel {
+            margin: 0px 15px 15px 15px;
+            float: right;
+            width: 210px;
+            position: relative;
+            top: -112px;
+        }
+
+        /* 文字 */
+        .zw {
+            color: darkgray;
+        }
+
+        .time {
+            color: gray;
+            font-weight: bold;
+        }
+
+        /* 右二 */
+        .teamtable {
+            height: 215px;
+        }
+
+        table {
+            width: 350px;
+            height: 210px;
+        }
+
+        .d1 {
+            text-align: center;
+        }
+
+        #t1 {
+            background: url(images/team_logo.png)no-repeat 6px 6px;
+        }
+
+        #t2 {
+            background: url(images/team_logo2.png)no-repeat 6px 6px;
+        }
+
+        #t3 {
+            background: url(images/team_logo3.png)no-repeat 6px 6px;
+        }
+
+        #t4 {
+            background: url(images/team_logo4.png)no-repeat 6px 6px;
+        }
+
+        .symbol {
+            margin: auto;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- 左一 -->
+        <div class="leftone">
+            <div class="headline1">
+                <h3>FEATURED NEWS</h3>
+            </div>
+            <div class="bigimg">
+                <div class="arrows">
+                    <div id="leftarrow"></div>
+                    <div id="rightarrow"></div>
+                </div>
+                <div class="wz">
+                    <p class="bgp">FIFA WORLD CUP 2017</p>
+                    <p class="bghl">GERMANY VS ARGENTINA</p>
+                    <p class="bgpe">11 SEP. 2017 / ANNA SMITH</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 右一 -->
+        <div class="rightone">
+            <div>
+                <div class="headline2">
+                    <h3>RECENT NEWS</h3>
+                </div>
+                <div class="newslist">
+                    <ul id="pp">
+                        <li>
+                            <div class="smlimg">
+                                <img src="images/recent_1.jpg" alt="">
+                            </div>
+                            <div class="lel">
+                                <h4>RECENT NEWS HEADING</h4>
+                                <p class="zw">The Arch Rivals have two major victories</p>
+                                <p>August 23rd,2017</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="smlimg">
+                                <img src="images/recent_2.jpg" alt="">
+                            </div>
+                            <div class="lel">
+                                <h4>RECENT NEWS HEADING</h4>
+                                <p class="zw">The Arch Rivals have two major victories</p>
+                                <p class="time">August 23rd,2017</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="smlimg">
+                                <img src="images/recent_3.jpg" alt="">
+                            </div>
+                            <div class="lel">
+                                <h4>RECENT NEWS HEADING</h4>
+                                <p class="zw">The Arch Rivals have two major victories</p>
+                                <p class="time">August 23rd,2017</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="smlimg">
+                                <img src="images/recent_4.jpg" alt="">
+                            </div>
+                            <div class="lel">
+                                <h4>RECENT NEWS HEADING</h4>
+                                <p class="zw">The Arch Rivals have two major victories</p>
+                                <p class="time">August 23rd,2017</p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 左二 -->
+        <div class="lefttwo">
+            <div class="newsimg">
+                <img src="images/feature_1.jpg" alt="">
+            </div>
+            <div class="article">
+                <p class="p1">FIFA WORLD CUP 2017</p>
+                <p class="p2"><span>ITALY</span> vs <span>ENGLAND</span></p>
+                <p class="p3">11 SEP,2017IANNA SMITH</p>
+                <p class="p4">Lorem ipsum dolor sit amet, consetetursadipscing elitr, sed diam nonumy eirmod utlabore et
+                    dolore
+                    magna aliquyam</p>
+                <p class="p5">READ MORE</p>
+            </div>
+            <div class="who">
+                <img src="images/admin.jpg" alt="">
+                <p>Alba Smith</p>
+                <div class="eye-solid icon"></div>
+                <div class="num" id="n1">169</div>
+                <div class="heart icon"></div>
+                <div class="num" id="n2">477</div>
+                <div class="chat icon"></div>
+                <div class="num" id="n3">09</div>
+            </div>
+        </div>
+
+        <!-- 右二 -->
+        <div class="righttwo">
+            <div class="kuang">
+                <div class="headline2">
+                    <h3>LEAGUE TABLE</h3>
+                </div>
+                <div class="teamtable">
+                    <!-- 表头-->
+                    <table>
+                        <tr>
+                            <th class="d1">TEAM</th>
+                            <th></th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>PTS</th>
+                        </tr>
+
+                        <tr>
+                            <td class="d1">1</td>
+                            <td id="t1" class="symbol">
+                                Ac Milan
+                            </td>
+                            <td>99</td>
+                            <td>99</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td class="d1">2</td>
+                            <td id="t2" class="symbol">
+                                Chelsae
+                            </td>
+                            <td>99</td>
+                            <td>99</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td class="d1">3</td>
+                            <td id="t3" class="symbol">
+                                Real Madrid
+                            </td>
+                            <td>99</td>
+                            <td>99</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td class="d1">4</td>
+                            <td id="t4" class="symbol">
+                                Bryan Munich
+                            </td>
+                            <td>99</td>
+                            <td>99</td>
+                            <td>99</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

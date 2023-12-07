@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>开关灯</title>
+</head>
+
+<body>
+    <button id="btn">开关灯</button>
+    <script>
+        let od = document.querySelector("#btn");
+        let bd = document.querySelector("body");
+        let flag = 0;
+        od.onclick = function () {
+            flag = 1 - flag;
+            if (flag == 1) {
+                bd.style.backgroundColor = 'black';
+            }
+            else {
+                bd.style.backgroundColor = 'white';
+            }
+        }
+        //点击按钮“开关灯”，切换body的背景色为白色和黑色
+        //需要定义个flag变量，默认是 0 表示开着灯，背景色为白色
+
+    </script>
+</body>
+
+</html>

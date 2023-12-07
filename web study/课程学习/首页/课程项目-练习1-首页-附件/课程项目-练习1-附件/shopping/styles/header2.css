@@ -1,0 +1,41 @@
+.header2 {
+    width: 1600px;
+    height: 80px;
+    background-color: rgb(240, 236, 233);
+    overflow: hidden;
+    margin: auto;
+}
+
+.header2 img {
+    height: 80px;
+    overflow: hidden;
+}
+
+.search {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    position: absolute;
+    top: 60px;
+    left: 600px;
+}
+
+.search input {
+    width: 700px;
+    height: 40px;
+    border: 3px solid orange;
+    border-radius: 5px;
+}
+
+.search button {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: 3px solid orange;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    top: 3px;
+}

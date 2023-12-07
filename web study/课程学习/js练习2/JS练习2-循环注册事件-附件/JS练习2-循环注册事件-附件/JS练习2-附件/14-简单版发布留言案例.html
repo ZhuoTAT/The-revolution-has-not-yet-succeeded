@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 100px;
+        }
+
+        textarea {
+            width: 200px;
+            height: 100px;
+            border: 1px solid pink;
+            outline: none;
+            resize: none;
+        }
+
+        ul {
+            margin-top: 50px;
+        }
+
+        li {
+            width: 300px;
+            padding: 5px;
+            background-color: rgb(245, 209, 243);
+            color: red;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+
+        #msgbox {
+            background: #f00;
+            color: #fff;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea name="" id=""></textarea>
+    <button>发布</button>
+    <ul>
+
+    </ul>
+    <p id="msgbox"></p>
+    <script>
+        let btn = document.querySelector('button');
+        let text = document.querySelector('textarea');
+        let ul = document.querySelector('ul');
+        let msgbox = document.querySelector('#msgbox');
+        btn.onclick = function () {
+            let li = document.createElement('li');
+            li.innerHTML = text.value;
+            // ul.insertBefore(li, ul.children[0]);
+            ul.appendChild(li);
+            text.value = '';
+        }
+
+        // 1. 获取元素
+        // 2. 注册事件
+
+    </script>
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>案例：简单版发布和删除留言案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 100px;
+        }
+
+        textarea {
+            width: 200px;
+            height: 100px;
+            border: 1px solid pink;
+            /* 去掉轮廓线 */
+            outline: none;
+            /* 禁止拖拽文本域  */
+            resize: none;
+        }
+
+        ul {
+            margin-top: 50px;
+        }
+
+        li {
+            width: 300px;
+            padding: 5px;
+            background-color: rgb(245, 209, 243);
+            color: #000;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+
+        li a {
+            float: right;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea name="" id="" cols="30" rows="10" placeholder="请输入您的留言"></textarea>
+    <button>发布</button>
+    <ul>
+
+    </ul>
+
+    <script>
+        // 1.获取元素
+        var btn = document.querySelector('button');
+        var text = document.querySelector('textarea');
+        var ul = document.querySelector('ul');
+        // 2.注册事件
+        btn.onclick = function () {
+            // trim() 方法用于删除字符串的头尾空白符，空白符包括：空格、制表符 tab、换行符等其他空白符等。
+            if (text.value.trim() === '') {
+                alert('您没有输入内容');
+                return false;
+            } else {
+                // console.log(text.value);
+                // (1)创建元素
+                var li = document.createElement('li');
+                // 先有li 才能赋值
+                li.innerHTML = text.value + "<a href='javascript:;'>删除</a>";
+                // (2)添加元素
+                // ul.appendChild(li);
+                ul.insertBefore(li, ul.children[0]);
+                // (3)删除元素 删除的是当前链接的 li 它的父亲
+                var as = document.querySelectorAll('a');
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function () {
+                        // node.removeChild(child);  删除的是li  当前a所在的 li this.parentNode;
+                        // ul.removeChild(this.parentElement);
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+                // 清空留言板
+                text.value = '';
+            }
+        }
+    </script>
+</body>
+
+</html>-->

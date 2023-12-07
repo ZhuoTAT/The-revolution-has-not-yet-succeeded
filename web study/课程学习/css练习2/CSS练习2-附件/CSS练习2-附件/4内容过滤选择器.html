@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS选择器练习4</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <style>
+    div:empty {
+      background-color: red;
+    }
+
+    div.mini {
+      border-color: red;
+      border-style: solid;
+    }
+
+    div:not(:empty) {
+      font-style: italic;
+      font-family: 黑体;
+    }
+  </style>
+
+  <!-- //选取不包含子元素(或者文本元素)的div空元素.设置背景颜色为 红色
+	 
+	  //选取含有class为mini元素 的div元素.设置边框为红色边框
+	 
+	  //选取含有子元素(或者文本元素)的div元素.设置字体为斜体，“黑体” -->
+
+</head>
+
+<body>
+  <h1>内容选择器</h1>
+  <div class="one" id="one">
+    id为one,class为one的div
+    <div class="mini">class为mini</div>
+  </div>
+
+  <div class="one" id="two" title="test">
+    id为two,class为one,title为test的div.
+    <div class="mini" title="other">class为mini,title为other</div>
+    <div class="mini" title="test">class为mini,title为test</div>
+  </div>
+
+  <div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini"></div>
+  </div>
+  <div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini" title="tesst">class为mini,title为tesst</div>
+  </div>
+  <div style="display:none;" class="none">style的display为"none"的div</div>
+
+  <div class="hide">class为"hide"的div</div>
+
+  <div>
+    包含input的type为"hidden"的div<input type="hidden" size="8" />
+  </div>
+
+  <span id="mover">正在执行动画的span元素.</span>
+</body>
+
+</html>

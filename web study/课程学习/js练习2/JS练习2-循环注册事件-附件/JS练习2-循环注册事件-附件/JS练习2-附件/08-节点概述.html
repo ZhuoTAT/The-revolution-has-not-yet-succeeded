@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 节点的优点 -->
+    <div>我是div</div>
+    <span>我是span</span>
+    <ul>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+    </ul>
+    <div class="box">
+        <span class="erweima">×</span>
+    </div>
+    <script>
+        let box = document.querySelector('.box');
+        console.dir(box);
+        console.log(box);
+        let erweima = document.querySelector('.erweima');
+        console.dir(erweima);
+        console.log(erweima);
+        let lis = document.querySelectorAll('li');
+        console.dir(lis);
+        console.log(lis);
+        let b = document.querySelectorAll('body');
+        b.forEach(function (bo) {
+            console.dir(bo);
+            console.log(bo);
+        })
+        
+        //选择span元素节点，控制台输出节点
+        
+        //选择1i元素节点，控制台输出节点
+        
+        //选择body，控制台输出它的所有元素子节点
+        
+    </script>
+</body>
+
+</html>

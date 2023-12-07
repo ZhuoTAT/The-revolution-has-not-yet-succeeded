@@ -1,0 +1,89 @@
+.nav{
+    overflow: hidden;
+}
+.sk {
+    position: absolute;
+    left: 185px;
+    top: 30px;
+    border-left: 1.5px solid #fb901de3;
+}
+.sk h1{
+    padding-left: 20px;
+    font-weight: bolder;
+    font-size: 30px;
+
+}
+.sk_list{
+    float: left;
+}
+.sk_list ul li{
+    float: left;
+}
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+.sk_con{
+    float: left;
+}
+.sk_con ul li{
+    float: left;
+}
+.sk_con ul li a{
+    display: block;
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+.sk_con ul li:last-child a::after{
+    content:'\e91e';
+    font-family: "icomoon";
+}
+.sk_hd{
+    width: 1200px;
+    height: 100px;
+    background-image: url(../images/女鞋背景.png);
+}
+.toming{
+    width: 1200px;
+    height: 100px;
+    background-color: #ffffff9d;
+}
+.toming .one{
+    display: block;
+    margin-left: 500px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fb901de3;
+
+}
+.toming .two {
+    display: block;
+    margin-left: 400px;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+}
+.sk_bd{
+    margin-top: 10px;
+}
+.sk_bd ul li{
+    overflow: hidden;
+    float: left;
+    margin-right: 13px;
+    width: 290px;
+    height: 460px;
+    border:1px solid transparent;
+}
+.sk_bd ul li:nth-child(4n){
+    margin-right: 0;
+}
+.sk_bd ul li:hover{
+    border:1px solid #ffb76b;
+}

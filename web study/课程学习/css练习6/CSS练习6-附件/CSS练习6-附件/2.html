@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双侧边栏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        div.all {
+            width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        div.header {
+            margin: 5px;
+            height: 100px;
+            background-color: rgb(142, 210, 253);
+        }
+
+        div.menu {
+            margin: 5px;
+            height: 25px;
+            background-color: rgb(79, 158, 255)
+        }
+
+        div.main {
+            overflow: hidden;
+        }
+
+        div.sidebar {
+            margin: 0px 5px 0px 5px;
+            width: 235px;
+            height: 400px;
+            background-color: rgb(148, 251, 255);
+        }
+
+        #s1 {
+            float: left;
+        }
+
+        #s2 {
+            float: right;
+        }
+
+
+        div.body {
+            float: left;
+            width: 510px;
+            height: 400px;
+            background-color: rgb(203, 243, 255);
+        }
+
+
+
+
+
+
+        div.footer {
+            height: 50px;
+            margin: 5px;
+            background-color: rgb(142, 190, 253);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="header">
+            <p>This is the Header</p>
+        </div>
+        <div class="menu">
+            <p>This is the Menu</p>
+        </div>
+        <div class="main">
+            <div class="sidebar" id="s1">
+                <p>This is the sidebar</p>
+            </div>
+            <div class="body">
+                <p>2列固定宽度左窄右宽型+头部+导航+尾部</p>
+            </div>
+            <div class="sidebar" id="s2">
+                <p>This is the sidebar2</p>
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            <p>This is the footer</p>
+        </div>
+    </div>
+</body>
+
+</html>

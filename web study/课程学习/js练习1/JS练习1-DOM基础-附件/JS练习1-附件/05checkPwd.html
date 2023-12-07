@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>失去焦点事件 onblur</title>
+    <style>
+        div {
+            width: 600px;
+            margin: 100px auto;
+        }
+
+        .message {
+            display: inline-block;
+            font-size: 12px;
+            color: #999;
+            background: url(images/mess.png) no-repeat left center;
+            padding-left: 20px;
+        }
+
+        .wrong {
+            color: red;
+            background: url(images/wrong.jfif);
+        }
+
+        .right {
+            columns: green;
+            background: url(images/right.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="register">
+        <input type="password" class="ipt">
+        <p class="message">请输入6~12位密码</p>
+    </div>
+    <script>
+        let mm=document.querySelector(".ipt");
+        let ll=document.querySelector(".message");
+        console.log(mm.value.length);
+        mm.addEventListener('input',function(){
+            if(mm.value.length>=6&&mm.value.length<=12){
+                console.log("密码长度符合要求");
+                ll.innerHTML="密码长度符合要求";
+            }
+            else{
+                console.log("密码长度不符合，要求6~12位");
+                ll.innerHTML = "密码长度不符合，要求6~12位";
+            }
+            
+        });
+    
+        // 1.获取元素
+       
+        // 2.注册事件 失去焦点
+        // 检查密码的长度是否为6到12之间
+        // 是：提示信息样式为 message right；提示信息内容为 密码长度符合要求
+        // 否：提示信息样式为 message wrong；提示信息内容为 密码长度不符合，要求6~12位
+
+        // 额外代码：检查密码的长度前，控制台输出密码的长度
+       
+    </script>
+</body>
+
+</html>

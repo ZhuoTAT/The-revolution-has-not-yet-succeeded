@@ -1,0 +1,1041 @@
+/* base */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFF;
+    color: #333;
+    font: 12px/1.6em Arial, sans-serif;
+    background: url(../images/back.jpg)no-repeat;
+    background-size: 2500px;
+}
+
+a {
+    color: #0287ca;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+h2 {
+    color: darkred;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+}
+
+html {
+    overflow: -moz-hidden-unscrollable;
+}
+
+/* 在Firefox下始终显示滚动条 */
+
+
+/* bottom */
+#bottom {
+    /* border: 1px solid green; */
+    width: 1000px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 1200px;
+    background-color: rgb(240, 234, 234);
+}
+
+#banquan {
+    font-size: larger;
+    text-align: center;
+    margin-top: 18px;
+}
+
+#renzhen {
+    font-size: larger;
+    text-align: center;
+    margin-top: 14px;
+}
+
+
+/* content */
+#content {
+    /* border: 1px solid purple; */
+    width: 750px;
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: 400px;
+    background-color: rgb(251, 255, 254);
+}
+
+#shu {
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    top: -47px;
+
+}
+
+#shu:hover {
+    background-color: rgb(214, 207, 207);
+    color: royalblue;
+}
+
+#shu h2 {
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#book .learn {
+    display: none;
+}
+
+#book:hover .learn {
+    display: block;
+}
+
+.first {
+    z-index: 2;
+}
+
+#door {
+    width: 450px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+#A {
+    width: 70px;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-size: 25px;
+    position: absolute;
+    left: 560px;
+    top: 240px;
+    color: rgb(49, 153, 136);
+}
+
+#book .first {
+    display: inline;
+}
+
+#book:hover .first {
+    display: none;
+}
+
+.learn {
+    /* border: 2px solid red; */
+    height: 1000px;
+    width: 1000px;
+    margin-top: -10px
+}
+
+#shuji {
+    width: 400px;
+    margin-top: 100px;
+}
+
+#time1 {
+    font-size: 28px;
+    position: absolute;
+    top: 550px;
+    left: 75px;
+    color: steelblue;
+}
+
+.learn h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 120px;
+    left: 380px;
+    color: rgb(165, 38, 49);
+}
+
+#ul1 {
+    font-size: 18px;
+    position: absolute;
+    top: 185px;
+    left: 375px;
+    color: rgb(179, 141, 144);
+}
+
+#ul1 li {
+    list-style-type: square;
+}
+
+#wshu {
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    top: -47px;
+    left: 120px;
+}
+
+#wshu:hover {
+    background-color: rgb(214, 207, 207);
+    color: royalblue;
+}
+
+#wshu h2 {
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#wbook .learn {
+    display: none;
+}
+
+#wbook:hover .learn {
+    display: block;
+}
+
+#muke {
+    height: 750px;
+    width: 720px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#time2 {
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    color: steelblue;
+}
+
+#tv {
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    top: -47px;
+    left: 240px;
+}
+
+#tv:hover {
+    background-color: rgb(214, 207, 207);
+    color: royalblue;
+}
+
+#tv h2 {
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#movie .learn {
+    display: none;
+}
+
+#movie:hover .learn {
+    display: block;
+}
+
+#bb {
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#time3 {
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    color: steelblue;
+}
+
+#wk {
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    top: -72px;
+    left: -170px;
+    color: black;
+
+}
+
+#wk:hover {
+    background-color: rgb(214, 207, 207);
+    color: royalblue;
+}
+
+#wk h2 {
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#work .learn {
+    display: none;
+    z-index: 4;
+}
+
+#work:hover .learn {
+    display: block;
+}
+
+#T {
+    height: 750px;
+    position: absolute;
+    left: 600px;
+    top: 14px;
+}
+
+#time4 {
+    font-size: 15px;
+    position: absolute;
+    left: 500px;
+    top: 14px;
+    color: steelblue;
+}
+
+#w1 {
+    position: absolute;
+    left: 516px;
+    top: 50px;
+    width: 200px;
+    height: 150px;
+    border: 3px pink solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#time5 {
+    font-size: 15px;
+    position: absolute;
+    left: 900px;
+    top: 130px;
+    color: steelblue;
+}
+
+#w2 {
+    position: absolute;
+    left: 900px;
+    top: 166px;
+    width: 200px;
+    height: 150px;
+    border: 3px pink solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#time6 {
+    font-size: 15px;
+    position: absolute;
+    left: 500px;
+    top: 280px;
+    color: steelblue;
+}
+
+#w3 {
+    position: absolute;
+    left: 516px;
+    top: 314px;
+    width: 200px;
+    height: 150px;
+    border: 3px pink solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#time7 {
+    font-size: 15px;
+    position: absolute;
+    left: 900px;
+    top: 396px;
+    color: steelblue;
+}
+
+#w4 {
+    position: absolute;
+    left: 900px;
+    top: 432px;
+    width: 200px;
+    height: 150px;
+    border: 3px pink solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#time8 {
+    font-size: 15px;
+    position: absolute;
+    left: 500px;
+    top: 546px;
+    color: steelblue;
+}
+
+#w5 {
+    position: absolute;
+    left: 516px;
+    top: 582px;
+    width: 200px;
+    height: 150px;
+    border: 3px pink solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#work .learn {
+    position: absolute;
+    left: -1000px;
+    width: 10000px;
+    top: -20px;
+}
+
+#white {
+    /* border: 1px solid red; */
+    width: 750px;
+    height: 800px;
+    position: absolute;
+    top: -26px;
+    left: -530px;
+    z-index: 3;
+}
+
+#work #white {
+    display: none;
+}
+
+#work:hover #white {
+    display: block;
+}
+
+
+
+/* head1 */
+#tittle {
+    font-size: 40px;
+    position: absolute;
+    top: -38px;
+    left: 300px;
+    font-weight: bold;
+    font-family: 黑体;
+}
+
+#header1 {
+    width: 1000px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 50px;
+}
+
+#header1 img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#zhaopian img {
+    border-radius: 50%;
+}
+
+#dlam {
+    width: 1000px;
+    height: 200px;
+    float: left;
+}
+
+#liwu img {
+    float: left;
+    position: relative;
+    bottom: 105px;
+    left: 890px;
+    width: 65px;
+    cursor: pointer;
+}
+
+/* #nav ul li{
+    float: left;
+}
+#nav ul li a{
+    display: block;
+} */
+#nav ul li ul {
+    display: none;
+}
+
+#nav ul li:hover ul {
+    position: absolute;
+    top: 101.5px;
+    left: 715px;
+    display: block;
+}
+
+#nav ul li ul {
+    width: 155px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 3px dashed rgb(16, 165, 91);
+    border-radius: 20px;
+    padding: 5px;
+
+}
+
+#laotie {
+    color: rgb(224, 141, 155);
+}
+
+#zhaopian {
+    z-index: 9997;
+    width: 155px;
+    height: 155px;
+    position: absolute;
+    margin-top: 105px;
+    margin-left: 50px;
+}
+
+#touxiang {
+    width: 155px;
+    height: 155px;
+}
+
+
+/* head2 */
+#header2 {
+    width: 1000px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 250px;
+    background-color: rgba(246, 255, 238, 0.897);
+}
+
+#Zhuo {
+    font-size: 22px;
+    font-weight: bolder;
+    color: rgb(149, 217, 244);
+    position: absolute;
+    left: 230px;
+    top: 25px;
+}
+
+#guanzhu {
+    font-size: 20px;
+    color: rgb(244, 246, 247);
+    position: absolute;
+    left: 335px;
+    top: 19px;
+    /* border: 1px solid red; */
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgb(231, 148, 166);
+}
+
+#guanzhu:hover {
+    text-decoration: none;
+}
+
+#fensi {
+    color: rgb(151, 133, 133);
+    font-size: 18px;
+    position: absolute;
+    left: 420px;
+    top: 25px;
+}
+
+#work {
+    color: rgb(151, 133, 133);
+    font-size: 18px;
+    position: absolute;
+    left: 530px;
+    top: 25px;
+}
+
+.sz {
+    color: orange;
+}
+
+#wyy {
+    font-size: 17px;
+    position: absolute;
+    left: 250px;
+    top: 65px;
+    color: rgb(90, 189, 70);
+}
+
+#heart {
+    width: 25px;
+    position: absolute;
+    left: 216px;
+    top: 56px;
+}
+
+#dianchi {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 716px;
+    top: 5px;
+}
+
+#q1,
+#q2,
+#p3,
+#p4 {
+    width: 40px;
+}
+
+#q1 {
+    position: absolute;
+    left: 910px;
+    top: 10px;
+}
+
+#q2 {
+    position: absolute;
+    left: 886px;
+    top: 54px;
+}
+
+#p3 {
+    position: absolute;
+    left: 706px;
+    top: 54px;
+}
+
+#p4 {
+    position: absolute;
+    left: 676px;
+    top: 12px;
+}
+
+#riben {
+    position: absolute;
+    left: 825px;
+    top: 45px;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(47, 136, 127);
+    background-color: rgb(251, 239, 171);
+    border: 3px solid rgb(251, 239, 171);
+    padding: 2px;
+    border-radius: 16px;
+}
+
+
+/* head3 */
+#header3 {
+    /* border: 1px solid green; */
+    width: 1000px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 350px;
+    background-color: rgb(254, 245, 215);
+}
+
+#men {
+    font-size: 16px;
+    z-index: 99;
+    position: absolute;
+    top: 14px;
+    left: 98px;
+    color: white;
+}
+
+#sousuo {
+    width: 175px;
+    height: 22px;
+    position: absolute;
+    top: 12px;
+    right: 70px;
+    border: rgb(230, 216, 216) 1px solid;
+    cursor: text;
+}
+
+#fdj {
+    height: 25px;
+    width: 33px;
+    position: absolute;
+    top: 12.45px;
+    right: 36px;
+    background: url(../images/fdj.png) no-repeat 0 0;
+    border: 1px solid rgb(230, 216, 216);
+    cursor: pointer;
+}
+
+/* left */
+#left {
+    /* border: 1px solid teal; */
+    width: 220px;
+    height: 500px;
+    position: fixed;
+    left: 20px;
+    top: 50px;
+    z-index: 9999;
+}
+
+#sun {
+    width: 120px;
+    margin-top: 100px;
+}
+
+#moom {
+    width: 90px;
+    margin-bottom: 8px;
+}
+
+#rili {
+    position: absolute;
+    top: 200px;
+    right: -20px;
+    /* border: 1px solid red; */
+}
+
+
+/* side */
+#side {
+    /* border: 1px solid brown; */
+    width: 250px;
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 400px;
+    background-color: rgb(226, 250, 242);
+}
+
+span {
+    color: rgb(238, 141, 157);
+}
+
+#h20 {
+    position: absolute;
+    top: 140px;
+    margin-left: 20px;
+    color: rgb(101, 185, 22);
+    font-size: 16px;
+}
+
+#img1 {
+    width: 140px;
+    height: 25px;
+    position: absolute;
+    top: 168px;
+    left: 45px;
+    cursor: pointer;
+}
+
+#img2 {
+    width: 140px;
+    height: 25px;
+    position: absolute;
+    top: 201px;
+    left: 45px;
+    cursor: pointer;
+}
+
+#img3 {
+    width: 140px;
+    height: 25px;
+    position: absolute;
+    top: 234px;
+    left: 45px;
+    cursor: pointer;
+}
+
+#img4 {
+    width: 140px;
+    height: 25px;
+    position: absolute;
+    top: 267px;
+    left: 45px;
+    cursor: pointer;
+}
+
+#h22 {
+    position: absolute;
+    top: 303px;
+    margin-left: 20px;
+    color: rgb(245, 127, 107);
+    font-size: 16px;
+}
+
+#ul2 {
+    position: absolute;
+    top: 330px;
+    margin-left: 63px;
+    font-size: 14px;
+    list-style: none;
+    width: 100px;
+}
+
+#jieshao {
+    margin-left: 20px;
+    margin-top: 8px;
+    width: 200px;
+    font-size: 15px;
+    font-family: 隶书;
+}
+
+#h21 {
+    position: absolute;
+    bottom: 300px;
+    color: teal;
+    font-size: larger;
+    left: 10px;
+}
+
+#input3 {
+    position: absolute;
+    bottom: 260px;
+    left: 70px;
+    width: 130px;
+    background-color: rgb(227, 233, 203);
+    cursor: text;
+}
+
+#lable1 {
+    position: absolute;
+    bottom: 260px;
+    left: 11px;
+    font-weight: bold;
+    color: rgb(7, 45, 128);
+}
+
+#input4 {
+    position: absolute;
+    bottom: 230px;
+    left: 70px;
+    width: 130px;
+    background-color: rgb(227, 233, 203);
+    cursor: text;
+}
+
+#lable2 {
+    position: absolute;
+    bottom: 230px;
+    left: 11px;
+    font-weight: bold;
+    color: rgb(7, 45, 128);
+}
+
+#input5 {
+    position: absolute;
+    bottom: 190px;
+    left: 70px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#input6 {
+    position: absolute;
+    bottom: 190px;
+    left: 130px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#ewm {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+#sao {
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+    font-size: 25px;
+    font-family: 宋体;
+    font-weight: bolder;
+    color: rgb(42, 6, 245);
+}
+
+#xian {
+    position: absolute;
+    bottom: 330px;
+    color: rgb(180, 34, 114);
+    font-size: larger;
+    font-weight: bolder;
+    left: 11px;
+}
+
+
+/* tubiao */
+#tubiao {
+    /* border: 1px solid salmon; */
+    width: 55px;
+    height: 255px;
+    position: fixed;
+    right: 185px;
+    top: 400px;
+    z-index: 9997;
+    background-color: rgb(97, 232, 241);
+}
+
+#shuaxin {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+#shuaxin:hover {
+    display: none;
+}
+
+#a1 {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    background-color: rgb(168, 192, 228);
+}
+
+#a1 a {
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#xiazai {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 75px;
+    left: 5px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+#xiazai:hover {
+    display: none;
+}
+
+#a2 {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 75px;
+    left: 5px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    background-color: rgb(168, 192, 228);
+}
+
+#a2 a {
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#fenxiang {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 135px;
+    left: 5px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+#fenxiang:hover {
+    display: none;
+}
+
+#a3 {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 135px;
+    left: 5px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    background-color: rgb(168, 192, 228);
+}
+
+#a3 a {
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#pinglun {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 195px;
+    left: 5px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+#pinglun:hover {
+    display: none;
+}
+
+#a4 {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 195px;
+    left: 5px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    background-color: rgb(168, 192, 228);
+}
+
+#a4 a {
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}

@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>CSS继承的运用</title>
+    <style type="text/CSS">
+        body{
+            background-color: rgb(246, 253, 213);
+            font-family: 仿宋;
+            color: rgb(103, 135, 69);
+        }
+        h1{
+            font-size: larger;
+        }
+        p{
+            font-weight: bold;
+        }
+        p.classl{
+            color: orange;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+
+<body>
+    body设置的样式可以被网页其他元素继承，可以作为其他元素的缺省样式，统一页面风格。
+    <center>
+        <h1>CSS继承的运用</h1>
+        （标题直接继承body的样式，不必专门设置自己的样式）
+        <hr>
+        <div>
+            <p>
+                p元素继承父元素的全部样式，同时添加自己的样式:加粗显示文字。
+            </p>
+            <p class="classl">子元素也可以根据需要设置自己的样式覆盖从父类继承的样式。比如此处的p元素。</p>
+
+        </div>
+        <hr>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- onclick 鼠标点击左键触发    onmouseover 鼠标经过触发    onmouseout 鼠标离开触发
+        onfocus 获得鼠标焦点触发     onblur 失去鼠标焦点触发      onmousemove 鼠标移动触发
+        onmouseup 鼠标弹起触发      onmousedown 鼠标按下触发 -->
+        
+    <button id="btn">按钮事件处理</button>
+    <div id="msg"></div>
+    <script>
+        // 点击一个按钮
+        // 1.事件是由三部分组  事件源   事件类型  事件处理程序 我们也称为时间三要素
+        // (1)事件源 事件被触发的对象 谁 按钮
+        let btn =document.querySelector('#btn');
+        // (2)事件类型 如何触发 什么事件 比如鼠标点击（onclick）
+        // (3)事件处理程序 通过一个函数赋值的方式 完成
+        btn.onclick=function() {
+           let div = document.querySelector('#msg');
+           div.innerText="用户点击了按钮，在div中显示信息";
+        }
+    </script>
+</body>
+</html>

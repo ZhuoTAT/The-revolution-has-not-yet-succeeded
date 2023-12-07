@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器练习7</title>
+    <style>
+        input:disabled {
+            color: red;
+            font-style: 1.2em;
+        }
+
+        intput[type="checkbox"] {
+            width: 50px;
+        }
+
+        select option[selected="selected"] {
+            border-color: purple;
+            border-style: solid;
+            font-style: italic;
+        }
+
+        input[type="submit"] {
+            width: 100px;
+            height: 30px;
+            background-color: green;
+        }
+    </style>
+    <!-- 
+	1.不可用文本框，设置字体为红色，大小为1.2em
+	2.多选框的宽度为50px
+	3.下拉列表中选中的项，设置边框为紫色，文字为斜体
+	4.提交按钮，设置宽度为100，高度为30，背景色为绿色
+ -->
+</head>
+
+<body>
+    <h1> 表单对象属性过滤选择器</h1>
+    <form id="form1" action="#">
+        可用元素：<input name="add" value="可用文本框" /> <br /> 不可用元素：
+        <input name="email" disabled="disabled" value="不可用文本框" /><br /> 可用元素： <input name="che" value="可用文本框" /><br />
+        不可用元素：
+        <input name="name" disabled="disabled" value="不可用文本框" /><br />
+        <br /> 多选框：
+        <br />
+        <input type="checkbox" name="newsletter" checked="checked" value="test1" />test1
+        <input type="checkbox" name="newsletter" value="test2" />test2
+        <input type="checkbox" name="newsletter" value="test3" />test3
+        <input type="checkbox" name="newsletter" checked="checked" value="test4" />test4
+        <input type="checkbox" name="newsletter" value="test5" />test5
+
+        <br /> 下拉列表1：
+        <br />
+        <select name="test" multiple="multiple" style="height:100px">
+            <option>浙江</option>
+            <option selected="selected">湖南</option>
+            <option>北京</option>
+            <option selected="selected">天津</option>
+            <option>广州</option>
+            <option>湖北</option>
+        </select>
+
+        <br /> 下拉列表2：
+        <br />
+        <select name="test2">
+            <option>浙江</option>
+            <option>湖南</option>
+            <option selected="selected">北京</option>
+            <option>天津</option>
+            <option>广州</option>
+            <option>湖北</option>
+        </select>
+        <br />
+
+        <input type="submit" value="提交">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+    <div getTime="20" data-index="2" data-list-name="andy"></div>
+    <script>
+        let div = document.querySelector('div');
+        div.setAttribute('data-time', 20);
+        console.log(div.dataset);
+        console.log(div.dataset['index']);
+        console.log(div.dataset.listName);
+        div.setAttribute('data-name', 'tom');
+        console.log(div.dataset.name);
+        console.log(div.dataset['name']);
+        div.setAttribute('data-frist-name', 'aly');
+        console.log(div.dataset.fristName);
+        console.log(div.dataset['fristName']);
+        
+        // h5新增的获取自定义属性的方法 它只能获取data-开头的
+        // dataset 是一个集合里面存放了所有以data开头的自定义属性
+
+        // 如果自定义属性里面有多个-链接的单词，我们获取的时候采取 驼峰命名法
+
+        //给div元素设置一个data-name属性，属性值为 tom
+        //获取div元素，控制台输出数据属性name的值
+        
+        //给div元素设置一个data-first-name属性，属性值为 aly
+        //获取div元素，控制台输出数据属性first-name的值
+        
+    </script>
+</body>
+
+</html>

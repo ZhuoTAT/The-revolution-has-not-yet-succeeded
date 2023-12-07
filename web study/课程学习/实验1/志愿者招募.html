@@ -1,0 +1,103 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>志愿者招募</title>
+    <style type="text/css">
+        div {
+            width: 700px;
+            height: 700px;
+        }
+
+        #div1 {
+            border-width: 4px;
+            border-style: solid;
+            border-color: rgb(241, 203, 203);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1" class="index">
+        <h1>&nbsp;&nbsp;志愿者信息</h1>
+        <hr color="rosybrown" width="700px" />
+        <form action="#" method="get">
+            <ol>
+                <li>
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name">
+                    <br><br>
+                </li>
+
+                <li>
+                    <label for="sex">性别：</label>
+                    <input type="radio" name="sex" value="man">男
+                    <input type="radio" name="sex" value="woman">女
+                    <br><br>
+                </li>
+
+                <li>
+                    <label for="age">年龄：</label>
+                    <input type="text" id="age" name="age">
+                    <br><br>
+                </li>
+
+                <li>
+                    <label for="id">身份证号:</label>
+                    <input type="text" id="id" name="id">
+                    <br><br>
+                </li>
+
+                <li>
+                    <label for="email">邮箱:</label>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+                </li>
+
+                <li>
+                    <label for="phone">电话:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <br><br>
+                </li>
+
+                <li>
+                    <label for="home">家庭住址:</label>
+                    <br>
+                    <textarea id="home" name="home"></textarea>
+                    <br><br>
+                </li>
+
+                <li>
+                    <label for="language">语言证书：</label>
+                    <select name="language" id="language">
+                        <option>CET-4</option>
+                        <option>CET-6</option>
+                        <option>TEM-4</option>
+                        <option>TEM-8</option>
+                    </select>
+                    <br><br>
+                </li>
+
+                <li>
+                    <label for="experience">相关经验:</label>
+                    <br>
+                    <textarea id="experience" name="experience"></textarea>
+                    <br><br>
+                </li>
+
+                <li>
+                    <label for="advantage">个人优势:</label>
+                    <br>
+                    <textarea id="advantage" name="advantage"></textarea>
+                    <br><br>
+                </li>
+
+
+                <button type="submit">提交申请</button>
+                <button type="reset">重置</button>
+            </ol>
+        </form>
+    </div>
+</body>
+
+
+</html>

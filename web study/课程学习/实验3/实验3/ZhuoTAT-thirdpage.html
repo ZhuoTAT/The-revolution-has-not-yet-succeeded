@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/thirdpage.css">
+    <title>ZhuoTAT</title>
+</head>
+
+<body>
+    <!-- 注册 -->
+    <div class="from">
+        <img class="bgc" src="images/back.jpg" alt="">
+        <div class="submit">
+            <span class="form_title">注册信息提交</span>
+            <div class="form_input">
+                <span>姓名：</span>
+                <input class="inputs" type="text" placeholder="请输入姓名...">
+            </div>
+            <div class="form_input">
+                <span>班级:</span>
+                <input class="inputs" type="text" placeholder="请输入班级...">
+            </div>
+            <div class="form_input">
+                <span>学号：</span>
+                <input class="inputs" type="text" placeholder="请输入学号...">
+            </div>
+            <div class="form_input">
+                <span>系部：</span>
+                <input class="inputs" type="text" placeholder="请输入院系...">
+            </div>
+            <div class="form_input">
+                <span>密码：</span>
+                <input class="inputs" type="text" placeholder="请设置密码...">
+            </div>
+            <div class="btn_submit">
+                <a href="./ZhuoTAT-secondpage.html">
+                    <button class="btn">提交</button></a>
+                <a href="./ZhuoTAT.html" class="back"><button class="home_href">首页</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let mucics = document.getElementById('audio')
+    document.body.addEventListener('mousemove', function () {
+        setTimeout(() => {
+            mucics.play();
+        }, 2000);
+    }, false);
+</script>
+
+</html>

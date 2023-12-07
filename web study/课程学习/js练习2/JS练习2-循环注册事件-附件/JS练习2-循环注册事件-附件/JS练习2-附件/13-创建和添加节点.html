@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>123</li>
+    </ul>
+    <script>
+        let li = document.createElement('li');
+        let ul = document.querySelector('ul');
+        ul.appendChild(li);
+        console.log('li');
+        let li1 = document.createElement('li');
+        ul.insertBefore(li1, ul.children[0]);
+        console.log('li1');
+        let li2 = document.createElement('li');
+        ul.appendChild(li2);
+        console.log('li2');
+        
+        // 1. 创建节点元素节点
+        
+        // 2. 添加节点 node.appendChild(child)  node 父级  child 是子级 后面追加元素  类似于数组中的push
+        
+        // 3. 添加节点 node.insertBefore(child, 指定元素);
+        
+        // 4. 我们想要页面添加一个新的元素 ： 1. 创建元素 2. 添加元素
+        
+        //****额外代码要求：本题中添加节点后，都要在控制台输出所有li***
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*基本信息*/
+        body {
+            font: 12px Tahoma;
+            margin: 0px;
+            text-align: center;
+            background: #FFF;
+        }
+
+        a:link,
+        a:visited {
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        a:hover {}
+
+        /*页面层容器*/
+        #container {
+            width: 800px;
+            margin: 10px auto
+        }
+
+        /*页面头部*/
+        #header {
+            background: url(images/logo.gif) no-repeat
+        }
+
+        #menu {
+            padding: 20px 20px 0 0
+        }
+
+        /*利用padding:20px 20px 0 0来固定菜单位置*/
+        #menu ul {
+            float: right;
+            list-style: none;
+            margin: 0px;
+        }
+
+        /*添加了float:right使得菜单位于页面右侧*/
+        #menu ul li {
+            float: left;
+            margin: 0 10px;
+            display: block;
+            line-height: 28px
+        }
+
+        .menuDiv {
+            width: 1px;
+            height: 28px;
+            background: #999
+        }
+
+        #menu ul li a:link,
+        #menu ul li a:visited {
+            font-weight: bold;
+            color: #666
+        }
+
+        #menu ul li a:hover {}
+
+        #banner {
+            background: url(images/banner.jpg) 0 30px no-repeat;
+            /*加入背景图片*/
+            width: 730px;
+            /*设定层的宽度*/
+            margin: auto;
+            /*层居中*/
+            height: 240px;
+            /*设定高度*/
+            border-bottom: 5px solid #EFEFEF;
+            /*画一条浅灰色实线*/
+            clear: both
+                /*清除浮动*/
+        }
+
+        #pagebody {
+            width: 730px;
+            /*设定宽度*/
+            margin: 8px auto;
+            /*居中*/
+            height: 400px;
+        }
+
+        #sidebar {
+            width: 175px;
+            /*设定宽度*/
+            text-align: left;
+            /*文字左对齐*/
+            float: left;
+            /*浮动居左*/
+            clear: left;
+            /*不允许左侧存在浮动*/
+            overflow: hidden;
+            /*超出宽度部分隐藏*/
+            background: lightblue;
+            height: 380px
+        }
+
+        #mainbody {
+            width: 550px;
+            text-align: left;
+            float: right;
+            /*浮动居右*/
+            clear: right;
+            /*不允许右侧存在浮动*/
+            overflow: hidden;
+            background: lightskyblue;
+        }
+
+        .passworld {
+            letter-spacing: 5px;
+            font-size: 15px;
+        }
+
+        .img01 {
+            float: left;
+            margin: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        .img02 {
+            float: left;
+            margin: 10px 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        .rap,
+        .yi {
+            float: left;
+            height: 168px;
+        }
+
+        .h31 {
+            margin: 22px 0px 0px 0px;
+        }
+
+        .h32 {
+            margin: 12px 0px 5px 0px;
+        }
+
+        p {
+            margin: 0px 20px 0px 0px;
+        }
+
+        .rp {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"><!--页面层容器-->
+        <div id="header"><!--页面头部-->
+            <div id="menu">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li class="menuDiv"></li>
+                    <li><a href="#">博客</a></li>
+                    <li class="menuDiv"></li>
+                    <li><a href="#">设计</a></li>
+                    <li class="menuDiv"></li>
+                    <li><a href="#">相册</a></li>
+                    <li class="menuDiv"></li>
+                    <li><a href="#">论坛</a></li>
+                    <li class="menuDiv"></li>
+                    <li><a href="#">关于</a></li>
+                </ul>
+            </div>
+
+            <div id="banner">
+            </div>
+
+        </div>
+        <div id="pagebody"><!--页面主体-->
+            <div id="sidebar"><!--侧边栏-->
+                <h3>Web编程基础课程网站</h3>
+                <div class="shu">请输入学号和密码</div>
+                <form id="loginform" method="post" action="LoginHandler.ashx">
+                    <p>
+                        <span class="required">*</span><label for="username">学号:</label><br />
+                        <input type="text" id="username" value="" name="username" />
+                    </p>
+
+                    <p>
+                        <span class="required">*</span><label for="password">密码:</label><br />
+                        <input type="password" id="password" value="" name="password" />
+                    </p>
+
+                    <p>
+                        <input type="submit" value="登录" />
+                    </p>
+                </form>
+            </div>
+            <div id="mainbody"><!--主体内容-->
+                <div class="rep">
+                    <img src="images/3.jpg" class="img01">
+                    <h2 class="h31">
+                        喵喵喵
+                    </h2>
+                    <p class="rp">纯白蓝眼80%患有先天性耳聋，一般哪只眼睛蓝哪边耳朵就聋。加上折耳多发遗传性骨科病，希望它以后没事吧。</p>
+                </div>
+                <div class="yi">
+                    <img src="images/5.jpg" class="img02">
+                    <h2 class="h32">
+                        喵喵喵
+                    </h2>
+                    <p>嘴吻部和鸳鸯眼有点像本土的临清狮子猫，但纯种临清是长毛的，你的是短毛，所以可能不太纯。</p>
+                </div>
+            </div>
+            <div id="Footer"><!--页面底部-->
+            </div>
+        </div>
+</body>
+
+</html>

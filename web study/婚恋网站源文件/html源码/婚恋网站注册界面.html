@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神主题婚恋网站注册界面</title>
+    <style type="text/css">
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>青春不常在，抓紧谈恋爱</h1>
+    <div>
+        <!-- 展示感兴趣的相亲对象信息 -->
+        <table width="500px" border="1">
+            <tr>
+                <td>
+                    <img src="images\胡桃.jpg" alt="">
+                </td>
+                <td>
+                    <img src="images\可莉.jpg" alt="">
+                </td>
+                <td>
+                    <img src="images\琴.jpg" alt="">
+                </td>
+                <td>
+                    <img src="images\魈.jpg" alt="">
+                </td>
+            </tr>
+        </table>
+        <!-- 注册界面 -->
+        <form action="#" method="get">
+            <ol>
+                <li>
+                    <label for="name">姓名：</label>
+                    <input type="text" name="name" id="name">
+                </li>
+                <br>
+                <li>
+                    <label for="sex">性别：</label>
+                    <input type="radio" name="sex" value="male">男
+                    <input type="radio" name="sex" value="female">女
+                </li>
+                <br>
+
+                <li>
+                    <label for="birth">出生年月日：</label>
+                    <select name="year" id="">...请选择年...
+                        <option value="">2023年</option>
+                        <option value="">2022年</option>
+                        <option value="">2021年</option>
+                        <option value="">2020年</option>
+                    </select>
+                    <select name="month" id="">...请选择月...
+                        <option value="">1月</option>
+                        <option value="">2月</option>
+                        <option value="">3月</option>
+                        <option value="">4月</option>
+                        <option value="">5月</option>
+                        <option value="">6月</option>
+                        <option value="">7月</option>
+                        <option value="">8月</option>
+                        <option value="">9月</option>
+                        <option value="">10月</option>
+                        <option value="">11月</option>
+                        <option value="">12月</option>
+                    </select>
+                    <select name="day" id="">...请选择日...
+                        <option value="">1日</option>
+                    </select>
+                </li>
+                <br>
+
+                <li>
+                    <label for="strict">所在地区：</label>
+                    <input type="text" name="strict" id="strict" value="请输入...">
+                </li>
+                <br>
+
+                <li>
+                    <label for="marrige">婚姻状态：</label>
+                    <input type="radio" name="marriged" id="">已婚
+                    <input type="radio" name="unmarriged" id="">未婚
+                    <input type="radio" name="devorce" id="">离婚
+                </li>
+                <br>
+                <li>
+                    <label for="education">学历背景：</label>
+                    <input type="radio" name="bachelor" id="">本科
+                    <input type="radio" name="master" id="">硕士
+                    <input type="radio" name="doctor" id="">博士
+                </li>
+                <br>
+
+                <li>
+                    <label for="prefer">喜欢的类型：</label>
+                    <input type="checkbox" name="dafangde" id="">大方的
+                    <input type="checkbox" name="cute" id="">可爱的
+                    <input type="checkbox" name="hot" id="">性感的
+                    <input type="checkbox" name="handsome" id="">帅气的
+                </li>
+                <br>
+
+                <li>
+                    <label for="introduction">自我介绍：</label>
+                    <br>
+                    <textarea name="introduction" id="" cols="30" rows="10" value="请输入..."></textarea>
+                </li>
+                <br>
+
+                <input type="checkbox" name="commit" id="">我同意注册各项条款
+                <br>
+                <a href="#">我已有账号，马上登录</a>
+                <br>
+                <button type="submit">注册</button>
+                <button type="reset">重置</button>
+            </ol>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

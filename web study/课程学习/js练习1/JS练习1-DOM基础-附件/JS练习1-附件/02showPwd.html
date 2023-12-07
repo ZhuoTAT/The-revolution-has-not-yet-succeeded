@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>隐藏显示密码</title>
+    <style>
+        .box {
+            position: relative;
+            width: 400px;
+            border-bottom: 1px solid #ccc;
+            margin: 100px auto;
+        }
+
+        .box input {
+            width: 370px;
+            height: 30px;
+            border: 0;
+            outline: none;
+        }
+
+        .box img {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            width: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <label>
+            <img src="images/close.png" alt="" id="eye">
+        </label>
+        <input type="password" name="" id="pwd">
+    </div>
+    <script>
+        let eye=document.querySelector("#eye");
+        let pwd=document.querySelector("#pwd");
+        console.dir(eye);
+        console.dir(pwd);
+        let flag=0; 
+        eye.onclick=function(){
+            flag=1-flag;
+            console.dir(flag);
+            if(flag==1){
+            eye.src="images/open.png";
+            pwd.type='text';
+            }
+            else{
+                eye.src = "images/close.png";
+                pwd.type = 'password';
+            }
+        }
+        
+        // 用户点击图片切换密码的隐藏和显示
+        // 默认是隐藏密码 input的type为password，使用闭眼图片 close.png；
+        // 单击图片后，显示密码 即改变input的type为text，使用张眼图片 open.png
+
+        // 1. 获取元素 （定义变量时 使用 let 关键字代替 var）（使用教材P419页 32.4.4节介绍的方法）
+        // 额外代码：控制台输出元素对应的变量，使用dir方法
+        
+        // 2. 注册事件 处理程序
+        // 需要定义个flag变量，默认是 0 表示隐藏，单击后改成 1；
+        // flag在0和1之间变换，记录当前隐藏和显示的状态
+
+        // 额外代码：flag的值变化后，控制台输出flag
+
+
+    </script>
+</body>
+
+</html>

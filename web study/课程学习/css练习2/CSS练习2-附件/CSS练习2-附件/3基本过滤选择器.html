@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS选择器练习3</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <style>
+    div:first-child {
+      font-style: italic;
+    }
+
+    div:last-child {
+      border-style: dashed;
+    }
+
+    div:not(.one) {
+      background-color: green;
+    }
+
+    :nth-child(3) {
+      color: red;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: bold;
+    }
+  </style>
+
+  <!-- //选择第一个div元素.,设置文字为斜体
+
+  //选择最后一个div元素.,设置边框为虚线边框
+
+  //选择class不为one的 所有div元素.,设置背景颜色 绿色
+
+  //选择 索引等于 3 的元素,设置 文字为红色
+
+  //选择 所有的标题元素.比如h1, h2, h3等等...,设置文字加粗 -->
+</head>
+
+<body>
+  <h1>基本过滤选择器</h1>
+  <div class="one" id="one">
+    id为one,class为one的div
+    <div class="mini">class为mini</div>
+  </div>
+
+  <div class="one" id="two" title="test">
+    id为two,class为one,title为test的div.
+    <div class="mini" title="other">class为mini,title为other</div>
+    <div class="mini" title="test">class为mini,title为test</div>
+  </div>
+
+  <div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini"></div>
+  </div>
+  <div class="one">
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini">class为mini</div>
+    <div class="mini" title="tesst">class为mini,title为tesst</div>
+  </div>
+  <div style="display:none;" class="none">style的display为"none"的div</div>
+
+  <div class="hide">class为"hide"的div</div>
+
+  <div>
+    包含input的type为"hidden"的div<input type="hidden" size="8" />
+  </div>
+
+  <span id="mover">正在执行动画的span元素.</span>
+</body>
+
+</html>

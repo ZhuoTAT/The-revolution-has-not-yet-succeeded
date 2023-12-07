@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>我是div</div>
+    <span>我是span</span>
+    <script>
+        let div = document.querySelector('div');
+        console.log(div.nextSibling);
+        console.log(div.nextElementSibling);
+        let span = document.querySelector('span');
+        console.log(span.previousElementSibling)
+
+        // 1.nextSibling 下一个兄弟节点 包含元素节点或者 文本节点等等：控制台输出
+        // 2. nextElementSibling 得到下一个兄弟元素节点：控制台输出
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通过className更改元素样式</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .change {
+            background-color: purple;
+            color: #fff;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <button id="reset">还原样式</button>
+        <button id="change">改变样式</button>
+    </p>
+    <div>文本</div>
+    <script>
+        let reset = document.querySelector("#reset");
+        let change = document.querySelector("#change");
+        let wenben = document.querySelector("div");
+        console.dir(wenben.className);
+        change.onclick = function () {
+            wenben.classList.add('change');
+        }
+        reset.onclick = function () {
+            wenben.classList.remove('change');
+        }
+        //点击“改变样式”按钮，通过className属性改变div样式
+        //点击“还原样式”按钮，通过className属性改变div样式
+
+        // 额外代码：改变div样式前，控制台输出div的className属性
+    </script>
+</body>
+
+</html>
